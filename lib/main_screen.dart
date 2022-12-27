@@ -1,3 +1,4 @@
+import 'package:animated_bottom_nav/screen/account.dart';
 import 'package:animated_bottom_nav/screen/cart.dart';
 import 'package:animated_bottom_nav/screen/feed.dart';
 import 'package:animated_bottom_nav/screen/home.dart';
@@ -19,7 +20,8 @@ class _MainScreenState extends State<MainScreen> {
     const HomeScreen(),
     const FeedScreen(),
     const MessageScreen(),
-    const CartScreen()
+    const CartScreen(),
+    const AccountScreen()
   ];
   @override
   Widget build(BuildContext context) {
@@ -32,6 +34,7 @@ class _MainScreenState extends State<MainScreen> {
           Icon(Icons.home, size: 30),
           Icon(Icons.rss_feed, size: 30),
           Icon(Icons.messenger, size: 30),
+          Icon(Icons.shopping_cart, size: 30),
           Icon(Icons.person, size: 30)
         ],
         onTap: (index) {
